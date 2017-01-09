@@ -46,22 +46,14 @@
               </ul>
 <p>You can get the <a href="https://github.com/peco/peco">source code from github</a>.</p>
 
-<p>If you want to get the binary using <code>go get</code>, install <a href="http://golang.org">go1.x</a> (at the time of this writing, go1.3 is recommended), and run:</p>
+<p>If you are on OS X and are using <a href="http://brew.sh/">homebrew</a> you can just type</p>
 
-<pre><code>$ go get github.com/peco/peco/cmd/peco</code></pre>
-
-(Yes, that's a lot of "peco"s :)
-
-<p>If you are on OS X and are using <a href="http://brew.sh/">homebrew</a>, use <code>brew tap</code> to get the repository</p>
-
-<pre><code>$ brew tap peco/peco
-$ brew install peco
+<pre><code>$ brew install peco
 </code></pre>
 
-<p>If you have already tapped the repository and want to upgrade, use <code>brew update</code>.</p>
+<p>Other methods of downloading the peco binary are described in the above Github page. Otherwise, please go to the <a href="https://github.com/peco/peco/releases">releases page</a>, and download the latest one.</p>
 
-<pre>    Note: If you have previously tapped my personal repo <code>lestrrat/peco</code>,
-    you will have to untap the old one and tap the <code>peco/peco</code> repository</pre>
+<p>PLEASE DO NOT USE `go get`! If you are a Go developer and wants to fiddle with peco source, `go get` is just fine: just be sure to take note that there is a glide.yaml file, which means you should use `glide install` to get the dependencies. Otherwise, PLEASE DOWNLOAD THE BINARIES, AND DO NOT USE `go get`.</p>
 
 <h3><a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h3>
 
